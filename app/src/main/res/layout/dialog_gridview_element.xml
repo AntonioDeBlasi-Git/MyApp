@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:gravity="center">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bottone_icona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:backgroundTint="@color/white"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        android:gravity="center"
+        app:srcCompat="@android:drawable/ic_dialog_info"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_dialog"
+    android:layout_width="400dp"
+    android:layout_height="600dp"
+    android:padding="1dp">
+    <GridView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/grid_view_dialog"
+        android:numColumns="4">
+    </GridView>
+</RelativeLayout>

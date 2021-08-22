@@ -1,0 +1,116 @@
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/my_layout"
+        android:layout_width="386dp"
+        android:layout_height="176dp"
+        android:background="#00FFFF"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="true"
+            android:onClick="Torna_main"
+            app:borderWidth="0dp"
+            app:elevation="0dp"
+            app:srcCompat="@drawable/abc_vector_test" />
+
+        <TextView
+            android:id="@+id/text_cat"
+            android:layout_width="381dp"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:text=" NUOVA CATEGORIA "
+            android:textSize="25dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/but_center_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:clickable="false"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:backgroundTint="@android:color/white"
+            app:srcCompat="@drawable/ic_bici"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="332dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Nome Categoria:" />
+
+        <EditText
+            android:id="@+id/nome_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="398dp"
+        android:layout_height="83dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:onClick="Scegli_icona"
+            android:text="Scegli icona" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:onClick="Scegli_colore"
+            android:text="Scegli colore" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="398dp"
+        android:layout_height="88dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:onClick="salva"
+            android:text="Salva" />
+
+        <Button
+            android:id="@+id/cancel_button_2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="cancella"
+            android:text="Cancella" />
+    </LinearLayout>
+
+</android.widget.LinearLayout>

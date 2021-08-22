@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/categorie"
+        android:title="Categorie"
+        android:icon="@drawable/ic_categorie">
+    </item>
+    <item
+        android:id="@+id/movimenti"
+        android:title="Movimenti"
+        android:icon="@drawable/ic_movimenti">
+    </item>
+    <item
+        android:id="@+id/andamento"
+        android:title="Andamento"
+        android:icon="@drawable/ic_andamenti">
+    </item>
+
+</menu>
