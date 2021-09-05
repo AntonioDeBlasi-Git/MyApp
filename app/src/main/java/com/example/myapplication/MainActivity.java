@@ -99,8 +99,11 @@ public class MainActivity extends AppCompatActivity implements Notice_change {
         Gson gson = new Gson();
         String json = sharedPreferences.getString("lista movimenti",null);
         Type type = new TypeToken<ArrayList<Movimenti>>() {}.getType();
+
         lista_movimenti = gson.fromJson(json,type);
-        if(lista_movimenti == null){
+        //lista_movimenti = Set_Default();
+        //SaveData();
+      if(lista_movimenti == null){
             lista_movimenti = Set_Default();
         }
     }
@@ -143,7 +146,7 @@ public class MainActivity extends AppCompatActivity implements Notice_change {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == 1) {
+        if(requestCode == 1 && resultCode == -1) {
             // da qui posso recuperare le info spesa
             pos = data.getIntExtra("posizione", 0);
             adapter.onActivityResult(requestCode, resultCode, data);

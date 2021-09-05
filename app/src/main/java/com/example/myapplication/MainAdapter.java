@@ -75,7 +75,7 @@ public class MainAdapter extends BaseAdapter implements PopupMenu.OnMenuItemClic
 
         textView_nome.setText(lista_movimenti.get(position).getTipo().getNome());
 
-       String spesa = lista_movimenti.get(position).getImporto_totale()+" $";
+       String spesa = lista_movimenti.get(position).getImporto_totale()+" €";
 
        textView_importo.setText(spesa);
 

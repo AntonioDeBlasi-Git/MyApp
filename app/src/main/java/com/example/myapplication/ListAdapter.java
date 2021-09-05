@@ -57,7 +57,7 @@ public class ListAdapter extends BaseAdapter {
 
 
 
-                String category = "  Alla Categoria : " + lista_spesa.get(position).getTipo()+ "   " + lista_spesa.get(position).getImporto()+" $";
+                String category = "  Alla Categoria : " + lista_spesa.get(position).getTipo()+ "   " + lista_spesa.get(position).getImporto()+" €";
                 String date = "  In data   " + lista_spesa.get(position).getData();
                 String comment = "  "+lista_spesa.get(position).getCommento();
                 categoria.setText(category);

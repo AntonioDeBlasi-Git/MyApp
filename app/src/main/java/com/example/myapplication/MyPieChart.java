@@ -86,12 +86,12 @@ public class MyPieChart extends AppCompatActivity {
         pieChart.setCenterTextSize(24);
         pieChart.getDescription().setEnabled(false);
 
-        Legend l = pieChart.getLegend();
+      /*  Legend l = pieChart.getLegend();
         l.setVerticalAlignment(Legend.LegendVerticalAlignment.TOP);
         l.setHorizontalAlignment(Legend.LegendHorizontalAlignment.RIGHT);
         l.setOrientation(Legend.LegendOrientation.VERTICAL);
         l.setDrawInside(false);
-        l.setEnabled(true);
+        l.setEnabled(true);*/
     }
 
     private void loadPieChartData() {
@@ -122,7 +122,7 @@ public class MyPieChart extends AppCompatActivity {
             }
         }
 
-        saldo_totale = "Spesa complessiva  "+ String.valueOf(saldo) + " $";
+        saldo_totale = "Spesa complessiva  "+ String.valueOf(saldo) + " €";
         textView.setText(saldo_totale);
 
         PieDataSet dataSet = new PieDataSet(entries, "Expense Category");

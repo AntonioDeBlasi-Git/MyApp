@@ -311,6 +311,7 @@ public class Creazione_spesa extends AppCompatActivity implements DatePickerDial
 
 
     public void cancella_spesa(View b){
-        super.onBackPressed();
+        setResult(RESULT_CANCELED);
+        finish();
     };
 }

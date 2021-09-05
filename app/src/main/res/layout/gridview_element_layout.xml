@@ -12,6 +12,7 @@
         android:layout_height="38dp"
         android:id="@+id/titolo_elemento"
         android:text="NOME"
+        android:textSize="12.5sp"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"
         android:textColor="@color/black"
