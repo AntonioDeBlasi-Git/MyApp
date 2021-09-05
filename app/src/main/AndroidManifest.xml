@@ -5,24 +5,45 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Remind Me"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication">
-        <activity android:name=".Spese_per_categoria"></activity>
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <activity
+            android:name=".InstantActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity2" />
+        <activity
+            android:name=".AggiornaActivity"
+            android:exported="true"
+            android:parentActivityName=".GestionePrioritaActivity" />
+        <activity
+            android:name=".NuovaPriorita"
+            android:exported="true"
+            android:label="Aggiungi Priorità"
+            android:parentActivityName=".GestionePrioritaActivity" />
+        <activity
+            android:name=".GestionePrioritaActivity"
+            android:parentActivityName=".MainActivity2"
+            android:exported="true" />
+        <activity android:name=".Spese_per_categoria" />
         <activity android:name=".MyPieChart" />
         <activity android:name=".Lista_Spese" />
         <activity android:name=".Creazione_spesa" />
         <activity
             android:name=".Creazione_Categorie"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".MainActivity"
+            android:parentActivityName=".MainActivity2"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
