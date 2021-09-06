@@ -3,6 +3,11 @@ package com.example.myapplication;
 import java.util.ArrayList;
 import java.util.List;
 
+/** CLASSE UTILITYCLASS
+ * Classe utilizzata per memorizzare i vettori di movimenti e passarli da un activity all'altra
+ * Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
+
 public class UtilityClass {
 
 

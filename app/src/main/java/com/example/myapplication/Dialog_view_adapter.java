@@ -15,6 +15,12 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
 
+/** CLASSE DIALOG ADAPTER
+ * Classe nella quale implementiamo i metodi della classe Base adapter, per permettere all'utente di scegliere
+ * un icona tra le presenti nel vettore icon.
+ * Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
+
 public class Dialog_view_adapter extends BaseAdapter {
 
     private Context context;

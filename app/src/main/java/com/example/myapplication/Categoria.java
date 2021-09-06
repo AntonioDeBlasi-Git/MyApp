@@ -3,6 +3,13 @@ package com.example.myapplication;;
 
 import java.util.Scanner;
 
+/**  CLASSE CATEGORIA
+ * Composta da tre attributi principali, nome, colore e icona.
+ * Rappresenta l'elemento di base di tutta l'appicazione di gestione monetaria, in quanto tutte le spese sono
+ * associate a delle categorie.
+ * Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
+
 public class Categoria {
 
     /* attributi della classe categoria */

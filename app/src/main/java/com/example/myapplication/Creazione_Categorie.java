@@ -18,6 +18,15 @@ import java.util.ArrayList;
 
 import petrov.kristiyan.colorpicker.ColorPicker;
 
+/** CLASSE CREAZIONE CATEGORIE
+ * Oltre alle categorie di default che vengono caricate all'avvio dell'app, tale classe gestisce la creazione
+ * di una nuova categoria da parte dell'utente, questo avviene tramite un iconPicker per la scelta dell'icoma della
+ * categoria, un color picker per la scelta del colore e una editText per l'inserimento del nome
+ * Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
+
+
+
 public class Creazione_Categorie extends AppCompatActivity implements IconChangeListener {
 
     RelativeLayout mainlayout;
@@ -40,10 +49,16 @@ public class Creazione_Categorie extends AppCompatActivity implements IconChange
     }
 
 
+    //semplicemente torniamo indietro
 
     public void cancella(View a){
         super.onBackPressed();
     }
+
+
+    /** una volta inseriti correttamente tutti i dati e premuto il tasto salva
+     *  salviamo nell'intent in risposta tutti i dati inseriti da utente
+     */
 
     public void salva(View b){
 
@@ -70,12 +85,15 @@ public class Creazione_Categorie extends AppCompatActivity implements IconChange
     }
 
 
+    // apertura del custom dialog per la scelta dell' icona
+
     public void openDialog(){
         Icon_dialog icon_dialog = new Icon_dialog(this);
         
         icon_dialog.show(getSupportFragmentManager(),"Icon Dialog");
     }
 
+    //inizializzazione del color picker con possibiltà di aggiungere altri colori
 
     public void opencolorpicker(){
         final ColorPicker colorPicker = new ColorPicker(this);
@@ -117,6 +135,8 @@ public class Creazione_Categorie extends AppCompatActivity implements IconChange
                     }
                 }).show();
     }
+
+    //sfrutto la funzione implemtata dall'interfaccia per salvare l'icona scelta
 
     @Override
     public void onIconChange(int id) {

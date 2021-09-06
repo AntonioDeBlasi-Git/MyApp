@@ -22,7 +22,13 @@ import org.mozilla.javascript.Scriptable;
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
+/** CLASSE CREAZIONE SPESA
+ *  Questa classe permette di creare una nuova spesa. Quest'ultima viene identificata da un importo
+ *  che l'utente inserirà tramite una calcolatrice appositamente implementata , una data che l'utente
+ *  potrà modificare tramite un apposito datepicker, e un editText all'interno del quale inserire un
+ *  possibile commento relativo alla spesa.
+ * Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
 public class Creazione_spesa extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
     TextView textView;
@@ -69,6 +75,8 @@ public class Creazione_spesa extends AppCompatActivity implements DatePickerDial
         rev.setBackgroundColor(Color.parseColor(intent.getStringExtra("colore")));
         pos = intent.getIntExtra("posizione",0);
 
+
+        //impostiamo la data attuale di defaul
         Date d = new Date();
         textDate = findViewById(R.id.testo_data);
         textDate.setText(DateFormat.getDateInstance().format(d));
@@ -98,6 +106,8 @@ public class Creazione_spesa extends AppCompatActivity implements DatePickerDial
         btnBracket = findViewById(R.id.btnBracket);
 
         tvInput = findViewById(R.id.tvInput);
+
+        //gestione dei click degli elementi sulla calcolatrice
 
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -290,6 +300,11 @@ public class Creazione_spesa extends AppCompatActivity implements DatePickerDial
         });
     }
 
+    /**
+     * una volta inseriti correttamente tutti i dati e premuto il tasto salva
+     * salviamo nell'intent in risposta tutti i dati inseriti da utente
+     */
+
 
     public void salva_spesa(View a){
 
@@ -309,6 +324,7 @@ public class Creazione_spesa extends AppCompatActivity implements DatePickerDial
 
     };
 
+    //altrimenti indichiamo che l'operazione non è andata a buon fine
 
     public void cancella_spesa(View b){
         setResult(RESULT_CANCELED);

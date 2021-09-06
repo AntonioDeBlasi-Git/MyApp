@@ -11,6 +11,11 @@ import android.widget.TextView;
 
 import java.util.List;
 
+/** CLASSE LISTA SPESE ADAPTER
+ * Adapter della classe lista spese che implemeta un listview
+ * Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
+
 public class ListAdapter extends BaseAdapter {
 
     private List<Spesa> lista_spesa;

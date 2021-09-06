@@ -13,6 +13,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.ArrayList;
 import java.util.List;
 
+/** CLASSE LISTA SPESE
+ * in questa classe creiamo una lista contenente tutte le spese per categoria in questo modo diamo
+ * la possibiltà all'utente di visionare soloo l'elenco di tutte le spese
+ * Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
+
 public class Lista_Spese extends AppCompatActivity {
 
     private ListView listView;
@@ -60,7 +66,7 @@ public class Lista_Spese extends AppCompatActivity {
         });
 
 
-
+        //ovviamente non ci interessano i movimenti con importo uguale a zero, poichè privi di spese
         for(Movimenti o : lista_movimenti){
             if(o.getImporto_totale() != 0){
                 for(Spesa a : o.getLista()){

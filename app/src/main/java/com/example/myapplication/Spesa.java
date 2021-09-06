@@ -3,6 +3,14 @@ package com.example.myapplication;
 import java.text.DateFormat;
 import java.time.LocalDate;
 
+/** CLASSE SPESA
+ * Classe fondamentale utilizzata in lista spese e spese pere categoria.
+ * Rappresenta le spese che possono essere associate ad una categoria, ed è composta da un tipo(categoria),
+ * un importo, una data e un commento.
+ * Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
+
+
 public class Spesa {
 
     private String tipo;

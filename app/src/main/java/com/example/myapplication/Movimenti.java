@@ -4,8 +4,13 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
+/** CLASSE MOVIMENTI
+ * la classe movimenti, memorizza tutte le spese in relazione ad una determinata categoria,
+ * tramite una lista di oggetti spesa, inoltre memorizza l'importo totale come somma delle varie spese
+ * Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
 
-/* la classe movimenti, memorizza tutte le spese in relazione ad una determinata categoria, tramite una lista di oggetti spesa, inoltre memorizza l'importo totale come somma delle varie spese */
+
 
 public class Movimenti {
 

@@ -23,6 +23,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.ArrayList;
 import java.util.List;
 
+/** CLASSE MYPIECHART
+ * classe che implementa il piechart tramite l'apposita classe
+ * Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
+
+
 public class MyPieChart extends AppCompatActivity {
 
     private PieChart pieChart;
@@ -96,21 +102,6 @@ public class MyPieChart extends AppCompatActivity {
 
     private void loadPieChartData() {
         ArrayList<PieEntry> entries = new ArrayList<>();
-       /* entries.add(new PieEntry(0.2f, "Food & Dining"));
-        entries.add(new PieEntry(0.15f, "Medical"));
-        entries.add(new PieEntry(0.10f, "Entertainment"));
-        entries.add(new PieEntry(0.25f, "Electricity and Gas"));
-        entries.add(new PieEntry(0.3f, "Housing"));
-
-        ArrayList<Integer> colors = new ArrayList<>();
-        for (int color: ColorTemplate.MATERIAL_COLORS) {
-            colors.add(color);
-        }
-
-        for (int color: ColorTemplate.VORDIPLOM_COLORS) {
-            colors.add(color);
-        }
-        */
 
 
         ArrayList<Integer> colors = new ArrayList<>();

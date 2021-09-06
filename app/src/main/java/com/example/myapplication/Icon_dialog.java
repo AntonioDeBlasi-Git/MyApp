@@ -17,6 +17,11 @@ import androidx.appcompat.app.AppCompatDialogFragment;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+/** CLASSE ICON DIALOG
+ * Implementazione vera e propria dell'icon dialog per permettere all'utente di scegliere un icona
+ * Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
+
 public class Icon_dialog extends AppCompatDialogFragment implements IconChangeListener{
 
     FloatingActionButton fab; //da collegare al layout
@@ -25,6 +30,7 @@ public class Icon_dialog extends AppCompatDialogFragment implements IconChangeLi
     int id;
 
     GridView gridView;
+    //vettore di icone di dafault
     private int[] icon_id = {
             R.drawable.ic_alimenti,R.drawable.ic_ristorante,R.drawable.ic_tempo_libero,R.drawable.ic_trasporto,R.drawable.ic_salute, R.drawable.ic_regali,
             R.drawable.ic_famiglia,R.drawable.ic_shopping, R.drawable.ic_game,R.drawable.ic_spa,R.drawable.ic_burger,R.drawable.ic_aereo,R.drawable.ic_vasca,
@@ -32,6 +38,8 @@ public class Icon_dialog extends AppCompatDialogFragment implements IconChangeLi
             R.drawable.ic_manubrio,R.drawable.ic_love,R.drawable.ic_letto, R.drawable.ic_casco,R.drawable.ic_bici,R.drawable.ic_bbq,R.drawable.ic_bask,R.drawable.ic_ape
     };
 
+    //il costruttore della classe icon dialog prende come parametro un oggetto icl in modo tale da poter notificare
+    //alla classe creazione categoria qual'è l'id dell'icona scelta dall'utente
     public Icon_dialog( IconChangeListener a){
         iconChangeListener = a;
     };
@@ -40,7 +48,7 @@ public class Icon_dialog extends AppCompatDialogFragment implements IconChangeLi
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
-        /* init dialog */
+        /* creazione dialog */
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
@@ -62,7 +70,7 @@ public class Icon_dialog extends AppCompatDialogFragment implements IconChangeLi
                     }
                 });
 
-        /* init gridview */
+        /* creazione gridview */
         gridView = view.findViewById(R.id.grid_view_dialog);
 
         Dialog_view_adapter adapter = new Dialog_view_adapter(getActivity(),icon_id,this);
@@ -71,6 +79,7 @@ public class Icon_dialog extends AppCompatDialogFragment implements IconChangeLi
         return builder.create();
     }
 
+    //in questo modo salviamo l'id dell'elemento scelto nell'attributo id di questa classe
     @Override
     public void onIconChange(int id) {
         this.id=id;

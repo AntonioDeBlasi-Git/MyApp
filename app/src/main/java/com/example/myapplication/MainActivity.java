@@ -23,7 +23,13 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
-
+/** CLASSE MAINACTIVITY
+ * Classe principale della gestionde monetaria.
+ * Inizializza il vettore dei movimenti con le categorie di default e salva tutti i dati tramite sharedpreference,
+ * all'interno della classe viene gestita la gridview relativa alle categorie, e la chiamata alla creazione di nuove,
+ * inoltre gestiamo tutti i valori di ritorno del result delle activity.
+ *  Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
 public class MainActivity extends AppCompatActivity implements Notice_change {
 
 
@@ -100,9 +106,7 @@ public class MainActivity extends AppCompatActivity implements Notice_change {
         String json = sharedPreferences.getString("lista movimenti",null);
         Type type = new TypeToken<ArrayList<Movimenti>>() {}.getType();
 
-        lista_movimenti = gson.fromJson(json,type);
-        //lista_movimenti = Set_Default();
-        //SaveData();
+       lista_movimenti = gson.fromJson(json,type);
       if(lista_movimenti == null){
             lista_movimenti = Set_Default();
         }

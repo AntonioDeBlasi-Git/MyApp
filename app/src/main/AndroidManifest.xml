@@ -3,10 +3,11 @@
     package="com.example.myapplication">
 
     <application
+
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="Remind Me"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/icona_2"
+        android:label="MyApp"
+        android:roundIcon="@drawable/icona_2"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
         <activity

@@ -21,6 +21,11 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
 
+/** CLASSE MAIN ADAPTER
+ * Classe relativa all'adapter della gridview contenente le rappresentazione delle categorie
+ *  Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
+
 public class MainAdapter extends BaseAdapter implements PopupMenu.OnMenuItemClickListener  {
 
     private Context context;

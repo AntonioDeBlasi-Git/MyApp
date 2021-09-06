@@ -8,7 +8,10 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/** CLASSE SPESE PER CATEGORIA
+ * Stesso funzionamento di lista spese solo permette di vedere le spese in riferimento ad una sola categoria
+ * Progetto: De Blasi Antonio e Zampirollo Francesco OOP
+ * */
 public class Spese_per_categoria extends AppCompatActivity {
 
     private List<Movimenti> movimentiList;
